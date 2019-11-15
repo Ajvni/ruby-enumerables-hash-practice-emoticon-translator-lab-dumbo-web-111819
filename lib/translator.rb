@@ -1,4 +1,4 @@
-require "YAML"
+require "yaml"
 
 def load_library
   emoticons = YAML.load_file(file)
@@ -12,7 +12,7 @@ def load_library
       new_hash['emoticon'][value[0]] = emoticons[key][1]
       new_hash['meaning'][value[1]] = key
     end
-    
+
 return new_hash
 
 end
